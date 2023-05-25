@@ -1,3 +1,4 @@
+import 'package:appp_work_1/signup.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -62,7 +63,13 @@ class login extends StatelessWidget {
               child: Row(
                 children: [
                   Text("Do you have an account?"),
-                  TextButton(onPressed: () {}, child: Text(" sign up")),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => signup(),
+                        ));
+                      },
+                      child: Text(" sign up")),
                 ],
               ),
             )
