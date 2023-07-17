@@ -46,6 +46,11 @@ dependencies:
   firebase_storage: ^11.2.4
   image_picker: ^1.0.1
   path:
+  #api using dio
+  dio: ^5.2.1+1
+  internet_connection_checker: ^1.0.0+1
+  top_snackbar_flutter: 
+  scrollable_positioned_list: 
   #  for api integration
   get:
   http:
@@ -53,6 +58,9 @@ dependencies:
   flutter_staggered_grid_view: ^0.6.2
   # for image
   cached_network_image:
+  firebase_auth: ^4.6.3
+  # for TMDB
+  tmdb_api: ^2.1.5
 
   
 

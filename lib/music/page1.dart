@@ -1,5 +1,4 @@
-import 'dart:html';
-
+import 'package:appp_work_1/music/page2.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -125,9 +124,13 @@ class musicApp extends StatelessWidget {
                 label: 'Search',
               ),
               BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.playlist_add,
-                  color: Color.fromARGB(255, 249, 159, 189),
+                icon: GestureDetector(
+                  onTap: () => Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => musicapp2())),
+                  child: Icon(
+                    Icons.playlist_add,
+                    color: Color.fromARGB(255, 249, 159, 189),
+                  ),
                 ),
                 label: 'Playlist',
               ),
